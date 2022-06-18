@@ -1,0 +1,29 @@
+@media (min-width: 992px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+    }
+
+    .nav {
+
+        &__box {
+            justify-content: space-between;
+        }
+
+        &__list {
+
+            flex-direction: row;
+            width: auto;
+            height: auto;
+            transform: translateX(0);
+
+            &-item-link {
+                padding: 3rem;
+            }
+
+        }
+    }
+}
