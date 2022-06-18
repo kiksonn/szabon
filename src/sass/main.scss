@@ -17,7 +17,7 @@ html {
 body {
     font-size: 1.8rem;
     color: $black;
-    background-color: royalblue;
+    background-color: $white;
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -93,7 +93,7 @@ body {
 
 .header {
     height: calc(100vh - 100px);
-    background-image: url('../img/header-small.jpg');
+    @include background-image("../img/header-small.jpg", .6);
 
     &__heading {
         color: $black
