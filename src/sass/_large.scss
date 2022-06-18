@@ -1,4 +1,9 @@
 @media (min-width: 992px) {
+    .title {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+    }
+
     // NAV
     .nav-mobile {
         display: none;
@@ -25,6 +30,31 @@
                 padding: 3rem;
             }
 
+        }
+    }
+
+    // ABOUT US
+
+    .about-us {
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &__img {
+            width: 45%;
+            margin-right: 7rem;
+            height: fit-content;
+        }
+
+        &__box {
+            margin: 0;
+            width: 55%;
+        }
+
+        &__box-text {
+            line-height: 160%;
         }
     }
 }

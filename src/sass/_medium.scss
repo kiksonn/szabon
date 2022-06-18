@@ -1,4 +1,11 @@
 @media(min-width:768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .title-three {
+        font-size: 3rem;
+    }
 
     // HEADER
     .header {
@@ -6,6 +13,14 @@
 
         &__heading {
             font-size: 5.5rem;
+        }
+    }
+
+    // ABOUT US
+
+    .about-us {
+        &__box-text {
+            font-size: 2rem;
         }
     }
 }
