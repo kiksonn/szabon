@@ -1,1 +1,11 @@
-// @media(min-width:768px) {}
+@media(min-width:768px) {
+
+    // HEADER
+    .header {
+        @include background-image("../img/header-big.jpg", .6);
+
+        &__heading {
+            font-size: 5.5rem;
+        }
+    }
+}

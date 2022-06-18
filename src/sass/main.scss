@@ -33,6 +33,7 @@ body {
     background-color: $white;
     height: 100px;
     width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     &__logo-link {
         padding: 0.5em;
@@ -64,6 +65,7 @@ body {
         list-style-type: none;
         transform: translateX(100%);
         transition: transform .3s ease;
+        font-size: 2rem;
 
         &--active {
             transform: translateX(0);
@@ -77,9 +79,10 @@ body {
             display: block;
             padding: 3rem 0;
             width: 100%;
+            transition: color .3s ease;
 
             &:hover {
-                background-color: red
+                color: $red;
             }
         }
     }
@@ -95,12 +98,24 @@ body {
     height: calc(100vh - 100px);
     @include background-image("../img/header-small.jpg", .6);
 
+    .header__box {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+    }
+
     &__heading {
-        color: $black
+        color: $black;
+        font-size: 4rem;
     }
 
     &__text {
-        color: $black
+        color: $black;
+        margin: .5em 0 1em 0;
+        font-size: 2rem;
     }
 }
 
