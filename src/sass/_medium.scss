@@ -7,20 +7,16 @@
         font-size: 3rem;
     }
 
+    .text {
+        font-size: 2rem;
+    }
+
     // HEADER
     .header {
-        @include background-image("../img/header-big.jpg", .6);
+        @include background-image("../img/header-big.jpg", .1);
 
         &__heading {
             font-size: 5.5rem;
-        }
-    }
-
-    // ABOUT US
-
-    .about-us {
-        &__box-text {
-            font-size: 2rem;
         }
     }
 }

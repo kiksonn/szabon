@@ -119,8 +119,6 @@ body {
     }
 }
 
-// ABOUT
-
 // ABOUT US
 
 .about-us {
@@ -137,9 +135,41 @@ body {
     &__box {
         margin-top: 2rem;
     }
+}
 
-    &__box-text {
-        font-size: 1.8rem;
+// OFFER
+
+.offer {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
+        &-item {
+
+            &-pricing {
+                display: flex;
+
+                align-items: center;
+            }
+
+            &-title-four {
+                padding-right: 1em;
+            }
+
+            &-border {
+                border-bottom: 1px dashed $black;
+                width: 100%;
+                height: 100%;
+            }
+
+            &-price {
+                width: 100%;
+                height: 100%;
+                padding-left: 1em;
+                font-weight: bold
+            }
+        }
     }
 }
 
