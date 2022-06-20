@@ -4,7 +4,7 @@
     }
 
     .title-three {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .text {
@@ -25,10 +25,21 @@
     .offer {
         &__list {
             &-item {
-                &-title-four, &-price {
+
+                &-title-four,
+                &-price {
                     font-size: 2.5rem;
                 }
             }
+        }
+    }
+
+    // BAR 
+    .bar {
+        @include background-image("../img/header-big.jpg", .1);
+
+        span {
+            font-size: 3.5rem;
         }
     }
 }
