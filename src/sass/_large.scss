@@ -72,35 +72,6 @@
             &-item {
                 margin: 1em .5em;
                 width: 45%;
-
-                &-pricing {
-                    display: flex;
-
-                    align-items: flex-end;
-                }
-
-                &-title-four {
-                    padding-right: .5em;
-                    text-transform: uppercase;
-                }
-
-                &-border {
-                    border-bottom: 1px solid $black;
-                    width: 100%;
-                    height: 100%;
-                }
-
-                &-price {
-                    height: 100%;
-                    padding-left: .5em;
-                    font-weight: bold;
-                }
-
-                &-text {
-                    font-size: 1.6rem;
-                    padding: .5em 0;
-                }
-
             }
         }
     }
