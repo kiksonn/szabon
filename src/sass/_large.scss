@@ -1,8 +1,4 @@
-@media (min-width: 992px) {
-    .title {
-        font-size: 4rem;
-        margin-bottom: 6rem;
-    }
+@media(min-width: 1200px) {
 
     // NAV
     .nav-mobile {
@@ -32,6 +28,13 @@
 
         }
     }
+}
+
+@media (min-width: 992px) {
+    .title {
+        font-size: 4rem;
+        margin-bottom: 6rem;
+    }
 
     // ABOUT US
 
@@ -55,6 +58,50 @@
 
         &__box-text {
             line-height: 160%;
+        }
+    }
+
+    // OFFER
+
+    .offer {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-item {
+                margin: 1em .5em;
+                width: 45%;
+
+                &-pricing {
+                    display: flex;
+
+                    align-items: flex-end;
+                }
+
+                &-title-four {
+                    padding-right: .5em;
+                    text-transform: uppercase;
+                }
+
+                &-border {
+                    border-bottom: 1px solid $black;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &-price {
+                    height: 100%;
+                    padding-left: .5em;
+                    font-weight: bold;
+                }
+
+                &-text {
+                    font-size: 1.6rem;
+                    padding: .5em 0;
+                }
+
+            }
         }
     }
 }
