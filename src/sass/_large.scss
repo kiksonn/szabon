@@ -76,17 +76,12 @@
         }
     }
 
-    // BAR
+    // TEAM
+    .team {
+        &__wrapper {
+            flex-direction: row;
 
-    .bar {
-        flex-direction: row;
-
-        span {
-            font-size: 4.5rem;
         }
-
-        // &__left {
-        //     flex: 1;
-        // }
     }
+
 }

@@ -13,7 +13,7 @@
 
     // HEADER
     .header {
-        @include background-image("../img/header-big.jpg", .1);
+        @include background-image("../img/header-big.png", .1);
 
         &__heading {
             font-size: 5.5rem;
@@ -34,12 +34,18 @@
         }
     }
 
-    // BAR 
-    .bar {
-        @include background-image("../img/header-big.jpg", .1);
+    // BAR
 
-        span {
-            font-size: 3.5rem;
-        }
-    }
+    // .bar {
+    //     @include background-image("../img/header-big.png", .1);
+
+    //     &__span {
+    //         font-size: 3rem;
+    //     }
+    // }
+
+    // TEAM 
+
+    
+
 }
