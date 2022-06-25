@@ -84,4 +84,70 @@
         }
     }
 
+    // KONTAKT
+
+    .contact {
+
+        &__wrapper {
+            flex-direction: row;
+        }
+
+        &__left {
+            flex: 2;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__right {
+            flex: 1.5;
+            height: auto;
+            padding: 2em;
+        }
+
+        &__form {
+            width: 115%;
+            margin: 0 0 0 -15%;
+            padding: 2em;
+        }
+
+        &__textarea {
+            flex: 5;
+        }
+
+
+        &__input {
+            flex: 1;
+        }
+
+        &__btn {
+            padding: .8em 0.6em;
+        }
+    }
+
+    // FOOTER
+
+    .footer {
+        &__heading {
+            margin-bottom: 0;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            width: fit-content;
+        }
+
+        &__box:nth-of-type(2n) {
+            margin: 0 8rem;
+        }
+    }
 }

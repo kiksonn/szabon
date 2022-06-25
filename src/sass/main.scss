@@ -273,7 +273,7 @@ body {
         justify-content: space-between;
         padding: 1em;
         background-color: $white;
-        border-bottom: 2px solid $black;
+        border-bottom: 4px solid $black;
     }
 
     &__input,
@@ -321,6 +321,78 @@ body {
     }
 }
 
+// FOOTER
+
+.footer {
+    // margin-top: 5em;
+    background-color: $white;
+
+
+    &__heading {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $black;
+        // img {
+        //     height: 40px;
+        //     margin-right: 5px;
+        // }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        padding: 2em 0;
+    }
+
+    &__container {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    &__box-text {
+        margin-bottom: 1.5rem;
+        color: $black;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__box-list-item {
+        color: $black;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+
+        a {
+            color: $black;
+            text-decoration: none;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__box-list {
+        list-style-type: none;
+    }
+
+    &__end {
+        border-top: 1px solid $black;
+        margin-bottom: 2em;
+    }
+
+    &__end-text {
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+}
 
 
 @import 'small', 'medium', 'large';

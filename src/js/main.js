@@ -1,7 +1,7 @@
 const nav = document.querySelector('.nav__list')
 const navBtn = document.querySelector('.hamburger')
 const allNavItems = document.querySelectorAll('.nav__list-item')
-// const footerYear = document.querySelector('.footer__year')
+const footerYear = document.querySelector('.footer__year')
 
 
 const handleNav = () => {
@@ -13,14 +13,14 @@ const handleNav = () => {
             nav.classList.remove('nav__list--active')
             navBtn.classList.remove('is-active')
         })
-    }) 
+    })
 }
 
-// const handleCurrentYear = () => {
-//     const year = (new Date).getFullYear();
-//     footerYear.innerText = year;
-// }
+const handleCurrentYear = () => {
+    const year = (new Date).getFullYear();
+    footerYear.innerText = year;
+}
 
-// handleCurrentYear();
+handleCurrentYear();
 navBtn.addEventListener('click', handleNav)
 
