@@ -384,13 +384,28 @@ body {
 
     &__end {
         border-top: 1px solid $black;
-        margin-bottom: 2em;
     }
 
     &__end-text {
         text-align: center;
         padding: 2rem;
         font-size: 1.8rem;
+    }
+}
+
+// GALERIA
+
+.gallery {
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 100%;
+        margin: 1em 0;
+        object-fit: cover;
     }
 }
 

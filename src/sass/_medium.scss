@@ -117,4 +117,22 @@
             margin-bottom: 0;
         }
     }
+
+    // GALERIA
+
+    .gallery {
+
+        &__box {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__img {
+            width: 270px;
+            height: 270px;
+            margin: 1em;
+        }
+    }
+
 }
