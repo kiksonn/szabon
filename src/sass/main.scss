@@ -34,6 +34,7 @@ body {
     height: 100px;
     width: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 9;
 
     &__logo-link {
         padding: 0.5em;
@@ -52,7 +53,7 @@ body {
         margin: 0 auto;
         width: 80%;
         height: 100%;
-
+        z-index: 9;
     }
 
     &__list {
@@ -67,7 +68,7 @@ body {
         transform: translateX(100%);
         transition: transform .3s ease;
         font-size: 2rem;
-
+        z-index: 9;
 
         &--active {
             transform: translateX(0);
