@@ -1,1 +1,11 @@
-// @media(min-width: 576px) {}
+@media(min-width: 568px) {
+    // NAV
+
+    .nav {
+        &__list {
+            &-item-link {
+                padding: 1rem 0;
+            }
+        }
+    }
+}

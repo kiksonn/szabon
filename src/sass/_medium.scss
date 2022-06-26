@@ -11,6 +11,16 @@
         font-size: 2rem;
     }
 
+    // NAV
+
+    .nav {
+        &__list {
+            &-item-link {
+                padding: 3rem 0;
+            }
+        }
+    }
+
     // HEADER
     .header {
         @include background-image("../img/header-big.png", .1);
