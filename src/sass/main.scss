@@ -222,11 +222,10 @@ body {
             height: 50vh;
             @include background-image("../img/header-small.png", .1);
 
-            &:hover &-info,
-            &:active &-info {
-                opacity: 1;
-                background-color: rgba(255, 255, 255, 0.6);
-            }
+            // &:hover &-info {
+            //     opacity: 1;
+            //     background-color: rgba(255, 255, 255, 0.6);
+            // }
 
             &--two,
             &--four {
@@ -239,13 +238,18 @@ body {
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
-                transition: .8s;
+                transition: opacity .6s ease, background-color .6s ease;
                 opacity: 0;
                 height: 100%;
                 padding: 1em;
             }
         }
     }
+}
+
+.active-team {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 // KONTAKT
@@ -304,7 +308,6 @@ body {
     &__textarea,
     &__btn {
         padding: 1em;
-        // font-size: 1.6rem;
     }
 
     &__btn {
