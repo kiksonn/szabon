@@ -62,7 +62,7 @@ body {
         justify-content: center;
         // align-items: center;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: 100vh;
         background-color: $white;
         list-style-type: none;
         transform: translateX(100%);
@@ -218,15 +218,10 @@ body {
 
 
         &-tile {
-
             height: 50vh;
             @include background-image("../img/header-small.png", .1);
-
-            // &:hover &-info {
-            //     opacity: 1;
-            //     background-color: rgba(255, 255, 255, 0.6);
-            // }
-
+            cursor: pointer;
+        
             &--two,
             &--four {
                 @include background-image("../img/header-small.png", .4);
